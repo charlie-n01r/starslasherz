@@ -85,7 +85,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #1a1a1a;
 		height: 100%;
 		min-width: 320px;
 	}
@@ -615,7 +615,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
+		background: #1e1e1e;
 		color: #39454b;
 		padding: 2em;
 	}
@@ -636,7 +636,7 @@ input, select, textarea {
 
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color: rgba(255, 255, 255, 0.9);
+					background-color: #1a1a1a;
 				}
 
 		}
@@ -2048,7 +2048,7 @@ input, select, textarea {
 			}
 
 			.main.style3.secondary {
-				background: #f5f6f7;
+				background: #1a1a1a;
 			}
 
 		.main.dark {
