@@ -494,7 +494,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -1833,7 +1833,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(34, 34, 34, 0.95);
+		background: #1a1a1a;
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2044,7 +2044,7 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: rgba(34, 34, 34, 0.95);
+				background: #1a1a1a;
 			}
 
 			.main.style3.secondary {
