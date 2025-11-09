@@ -9,16 +9,17 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
 		<link rel="manifest" href="images/favicon_io/site.webmanifest">
+		<link href="https://vjs.zencdn.net/8.23.4/video-js.css" rel="stylesheet" />
+		<link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<h1 style="color: #f30098">Meitel Bolaños</h1>
+				<h1 style="color: #f30098"><a href="#intro">Meitel Bolaños</a></h1>
 				<nav>
 					<ul>
-						<li><a href="#intro" style="color: white;">Intro</a></li>
 						<li><a href="#backgrounds" style="color: white;">Backgrounds</a></li>
 						<li><a href="#characters_and_props" style="color: white;">Characters and Props</a></li>
 						<li><a href="#demo_reel" style="color: white;">Demo Reel</a></li>
@@ -146,21 +147,25 @@
 			</section>
 
 		<!-- Demo Reel -->
-		 <section id="demo_reel" class="main style2 left dark fullscreen">
-				<div class="content box style2">
+		 <section id="demo_reel" class="main style3 primary fullscreen">
+				<div class="content">
 					<header>
-						<h2 style="color: white;">Who I Am</h2>
-						<img src="images/Mei.png" title="Mei" alt=""
-							style="width: 550px; height: auto; max-width: 100%; padding-top: 1em;"
-						/>
+						<h2 style="color: #f30098;">Demo Reel</h2>
 					</header>
-					<p style="color: white;">Hi there! My name is Meitel Bolanos and I am a Mexican artist currently living in Canada.
-					I have a passion for vivid storytelling as well as making new and exciting worlds come to life.
-					Via the art of background design, I believe it is possible to bring out the true personality of a
-					story while setting the tone for what the spirit of it should entail.
-					<br/>
-					<br/>
-					Some of my interests include cartoons, video games, horror films and exploring different food & entertainment spots around my city!</p>
+					<div class="gallery">
+						<article class="from-bottom">
+							<video id="demo-reel" class="video-js vjs-theme-city demo-video"
+								controls preload="auto" data-setup="{}">
+									<source src="images/Demo Reel.mp4" type="video/mp4">
+									<p class="vjs-no-js">
+										To view this video please enable JavaScript, and consider upgrading to a
+										web browser that
+										<a href="https://videojs.com/html5-video-support/" target="_blank">
+											supports HTML5 video</a>
+									</p>
+							</video>
+						</article>
+					</div>
 				</div>
 			</section>
 
@@ -226,6 +231,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
 
 	</body>
 </html>
