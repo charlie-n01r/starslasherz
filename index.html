@@ -9,19 +9,21 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
 		<link rel="manifest" href="images/favicon_io/site.webmanifest">
+		<link href="https://vjs.zencdn.net/8.23.4/video-js.css" rel="stylesheet" />
+		<link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<h1 style="color: #f30098">Meitel Bolaños</h1>
+				<h1 style="color: #f30098"><a href="#intro">Meitel Bolaños</a></h1>
 				<nav>
 					<ul>
-						<li><a href="#intro" style="color: white;">Intro</a></li>
 						<li><a href="#backgrounds" style="color: white;">Backgrounds</a></li>
 						<li><a href="#characters_and_props" style="color: white;">Characters and Props</a></li>
-						<li><a href="#two" style="color: white;">Who I Am</a></li>
+						<li><a href="#demo_reel" style="color: white;">Demo Reel</a></li>
+						<li><a href="#about" style="color: white;">About</a></li>
 						<li><a href="#contact" style="color: white;">Contact</a></li>
 					</ul>
 				</nav>
@@ -144,8 +146,31 @@
 				</div>
 			</section>
 
-		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
+		<!-- Demo Reel -->
+		 <section id="demo_reel" class="main style3 primary fullscreen">
+				<div class="content">
+					<header>
+						<h2 style="color: #f30098;">Demo Reel</h2>
+					</header>
+					<div class="gallery">
+						<article class="from-bottom">
+							<video id="demo-reel" class="video-js vjs-theme-city demo-video"
+								controls preload="auto" data-setup="{}">
+									<source src="images/Demo Reel.mp4" type="video/mp4">
+									<p class="vjs-no-js">
+										To view this video please enable JavaScript, and consider upgrading to a
+										web browser that
+										<a href="https://videojs.com/html5-video-support/" target="_blank">
+											supports HTML5 video</a>
+									</p>
+							</video>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- About -->
+			<section id="about" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
 						<h2 style="color: white;">Who I Am</h2>
@@ -206,6 +231,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
 
 	</body>
 </html>

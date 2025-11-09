@@ -2253,11 +2253,11 @@ input, select, textarea {
 	}
 	
 	.overlay-bg {
-		position: fixed;        /* stays in the same place even when scrolling */
-		top: 20px;              /* adjust spacing from the top */
-		right: 20px;            /* adjust spacing from the right */
-		border-radius: 8px;     /* optional for rounded corners */
-		color: white;           /* ensure text is visible */
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		border-radius: 8px;
+		color: white;
 		padding-top: 15em;
 		padding-right: 10em;
 		text-align: center;
@@ -2271,7 +2271,7 @@ input, select, textarea {
 		font-size: 1.5em;
 	}
 
-	@media (max-width: 768px) {
+	@media screen and (max-width: 736px) {
 		.overlay-bg {
 			position: fixed;
 			top: 7em;
@@ -2287,14 +2287,35 @@ input, select, textarea {
   		}
 
 		.overlay-bg p {
-    		font-size: 1rem;       /* Smaller subtitle */
+    		font-size: 1rem;
   		}
 	}
 
+/* Demo Reel */
 
-/* Two */
+	#demo_reel {
+		background: #1a1a1a;
+	}
 
-	#two {
+	.demo-video {
+		width: 200%;
+	}
+
+	@media screen and (max-width: 736px) {
+		.demo-video {
+			width: 100%;
+			
+		}
+	}
+
+	.vjs-theme-city .vjs-play-progress {
+  		background-color: #f30098 !important;
+	}
+
+
+/* About */
+
+	#about {
 		background: url("images/overlay.png"), url("../../images/pink.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
