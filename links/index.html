@@ -31,6 +31,35 @@
                 text-align: center;
             }
 
+            .container {
+                background-color: transparent;
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 700px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            @media (min-width: 768px) {
+                body {
+                    background: url("../images/carnival inside ver.png") center/cover no-repeat fixed;
+                }
+
+                .container {
+                    background-color: var(--bg-color);
+                    padding: 2rem;
+                    border-radius: 20px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
             img.avatar {
                 width: 120px;
                 height: 120px;
@@ -123,34 +152,36 @@
         </style>
     </head>
     <body>
-        <img src="../images/Mei.png" alt="Profile photo" class="avatar" />
+        <div class="container">
+            <img src="../images/Mei.png" alt="Profile photo" class="avatar" />
 
-        <h1 style="font-size: 2em; color: #ffb6e6;">Meitel Bolaños</h1>
-        <p class="bio">Background Designer ✨ | 2DFX Artist</p>
+            <h1 style="font-size: 2em; color: #ffb6e6;">Meitel Bolaños</h1>
+            <p class="bio">Background Designer ✨ | 2DFX Artist</p>
 
-        <div class="links">
-            <a href="../" class="link" target="_blank">
-                <span class="icon solid fa-star"> My Portfolio</span>
-            </a>
-            <a href="https://www.behance.net/meitelbolanos#" class="link" target="_blank">
-                <span class="icon brands fa-behance"> Behance</span>
-            </a>
-            <a href="https://www.artstation.com/meitelbolanos" class="link" target="_blank"> 
-               <span class="icon brands fa-artstation"> ArtStation</span>
-            </a>
-            <a href="https://www.linkedin.com/in/meitel-bolanos/" class="link" target="_blank">
-                <span class="icon brands fa-linkedin-in"> LinkedIn</span>
-            </a>
-            <a href="https://www.instagram.com/meitelbogart/" class="link" target="_blank">
-                <span class="icon brands fa-instagram"> Instagram</span>
-            </a> 
-            <a href="mailto:meitelbog@gmail.com" class="link" target="_blank">
-                <span class="icon solid fa-envelope"> Contact</span>
-            </a> 
+            <div class="links">
+                <a href="../" class="link" target="_blank">
+                    <span class="icon solid fa-star"> My Portfolio</span>
+                </a>
+                <a href="https://www.behance.net/meitelbolanos#" class="link" target="_blank">
+                    <span class="icon brands fa-behance"> Behance</span>
+                </a>
+                <a href="https://www.artstation.com/meitelbolanos" class="link" target="_blank"> 
+                <span class="icon brands fa-artstation"> ArtStation</span>
+                </a>
+                <a href="https://www.linkedin.com/in/meitel-bolanos/" class="link" target="_blank">
+                    <span class="icon brands fa-linkedin-in"> LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/meitelbogart/" class="link" target="_blank">
+                    <span class="icon brands fa-instagram"> Instagram</span>
+                </a> 
+                <a href="mailto:meitelbog@gmail.com" class="link" target="_blank">
+                    <span class="icon solid fa-envelope"> Contact</span>
+                </a> 
+            </div>
+
+            <footer>
+                <p style="font-size: 1rem;">&copy; 2025 Meitel Bolaños</p>
+            </footer>
         </div>
-
-        <footer>
-            <p style="font-size: 1rem;">&copy; 2025 Meitel Bolaños</p>
-        </footer>
     </body>
 </html>
