@@ -974,6 +974,27 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		img.avatar {
+			border-radius: 50%;
+			object-fit: cover;
+			margin-bottom: 1rem;
+			border: 2px solid #f30098;
+			width: 400px;
+			height: 400px;
+			max-width: 100%;
+        }
+
+		@media (max-width: 480px) {
+			img.avatar {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				object-fit: cover;
+				margin-bottom: 1rem;
+				border: 2px solid #f30098;
+			}
+		}
+
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -1804,6 +1825,7 @@ input, select, textarea {
 				-webkit-transform: translateY(7em);
 				-ms-transform: translateY(7em);
 				transform: translateY(7em);
+				transition: transform 0.6s ease;
 			}
 
 		@media screen and (max-width: 480px) {
@@ -2010,7 +2032,7 @@ input, select, textarea {
 				-moz-justify-content: -moz-flex-start;
 				-webkit-justify-content: -webkit-flex-start;
 				-ms-justify-content: -ms-flex-start;
-				justify-content: flex-start;
+				justify-content: center;
 			}
 
 			.main.style2.right {
@@ -2021,10 +2043,10 @@ input, select, textarea {
 			}
 
 			.main.style2.inactive.left > .content {
-				-moz-transform: translateX(-100%);
-				-webkit-transform: translateX(-100%);
-				-ms-transform: translateX(-100%);
-				transform: translateX(-100%);
+				-moz-transform: translateX(-125vw);
+				-webkit-transform: translateX(-125vw);
+				-ms-transform: translateX(-125vw);
+				transform: translateX(-125vw);
 			}
 
 			.main.style2.inactive.right > .content {
@@ -2082,7 +2104,11 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
-				width: 40%;
+				width: 70%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
 			}
 
 		}
