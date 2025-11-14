@@ -974,11 +974,6 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.thumbnails {
-			height: 277;
-			width: 400;
-		}
-
 		img.avatar {
 			border-radius: 50%;
 			object-fit: cover;
@@ -1711,7 +1706,7 @@ input, select, textarea {
 
 					#header nav ul li a {
 						display: block;
-						color: inherit;
+						color: white;
 						text-decoration: none;
 						height: 3em;
 						line-height: 3em;
